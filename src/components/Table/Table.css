@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.back-button {
+  background: linear-gradient(
+    135deg,
+    rgba(116, 153, 183, 0.9),
+    rgba(105, 160, 179, 0.9)
+  );
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 1rem;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.stored-entries-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.stored-entries-table th,
+.stored-entries-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.stored-entries-table th {
+  background: linear-gradient(
+    135deg,
+    rgba(116, 153, 183, 0.9),
+    rgba(105, 160, 179, 0.9)
+  );
+  color: white;
+  text-transform: uppercase;
+}
+
+.stored-entries-table td {
+  background-color: #fff;
+  color: #333;
+}
+
+.stored-entries-table tbody tr:nth-child(even) {
+  background-color: #e2e8f0;
+}
+
+.stored-entries-table tbody tr:hover {
+  background-color: #d1d5db;
+}
+
+.stored-entries-table button {
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #73b5d4, #73b5d4);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.stored-entries-table button:hover {
+  background: linear-gradient(135deg, #73b5d4, #73b5d4);
+  transform: scale(1.05);
+}

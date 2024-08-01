@@ -1,0 +1,89 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+
+/* Navbar container */
+nav {
+  background-color: #333; /* Background color */
+  padding: 10px; /* Padding around the links */
+  text-align: right; /* Right-align the links */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+/* Navbar container */
+nav {
+  background: linear-gradient(135deg, rgba(88, 138, 179, 0.9), rgba(101, 158, 177, 0.9));
+  padding: 10px; /* Padding around the links */
+  text-align: right; /* Right-align the links */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Navbar links */
+nav a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Add spacing between links */
+  font-size: 16px; /* Font size */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+  padding: 8px 16px; /* Add padding to the links */
+  border-radius: 4px; /* Add border radius to create rounded corners */
+}
+
+/* Navbar link hover effect */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+}
+
+/* Active link */
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for active link */
+}
+
+/* Separator between links */
+nav a:not(:last-child)::after {
+  content: "|"; /* Add separator */
+  margin-left: 10px; /* Add spacing between separator and next link */
+  color: rgba(255, 255, 255, 0.5); /* Color of the separator */
+}
+
+/* Animation for links */
+nav a {
+  transition: transform 0.2s ease; /* Smooth transition for transform */
+}
+
+nav a:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
