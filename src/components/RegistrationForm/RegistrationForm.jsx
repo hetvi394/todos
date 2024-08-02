@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { ThemeContext } from "../ThemeContext/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faLock, faRegistered, faToggleOn } from "@fortawesome/free-solid-svg-icons";
+import InputField from "../shared/shared"; // Import the new InputField component
 import "./RegistrationForm.css";
 
 function RegistrationForm() {
@@ -56,42 +57,27 @@ function RegistrationForm() {
           <FontAwesomeIcon icon={faRegistered} size="2x" />
         </div>
         <h1 style={{ textAlign: "center" }}>Register</h1>
-        <div className="form-group">
-          <label htmlFor="name">
-            <FontAwesomeIcon icon={faUser} />
-            <input
-              type="text"
-              id="name"
-              ref={nameRef}
-              className="form-input"
-              placeholder="Name"
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">
-            <FontAwesomeIcon icon={faEnvelope} />
-            <input
-              type="email"
-              id="email"
-              ref={emailRef}
-              className="form-input"
-              placeholder="Email"
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">
-            <FontAwesomeIcon icon={faLock} />
-            <input
-              type="password"
-              id="password"
-              ref={passwordRef}
-              className="form-input"
-              placeholder="Password"
-            />
-          </label>
-        </div>
+        <InputField
+          icon={faUser}
+          type="text"
+          id="name"
+          placeholder="Name"
+          ref={nameRef}
+        />
+        <InputField
+          icon={faEnvelope}
+          type="email"
+          id="email"
+          placeholder="Email"
+          ref={emailRef}
+        />
+        <InputField
+          icon={faLock}
+          type="password"
+          id="password"
+          placeholder="Password"
+          ref={passwordRef}
+        />
         <button type="submit" className="form-button">
           Register
         </button>

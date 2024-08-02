@@ -9,6 +9,7 @@ import {
   faToggleOn,
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import InputField from "../shared/shared"; // Import the new InputField component
 
 function Login({ onLogin }) {
   const emailRef = useRef("");
@@ -54,30 +55,20 @@ function Login({ onLogin }) {
           <h1>
             <FontAwesomeIcon icon={faSignInAlt} /> Login
           </h1>
-          <div className="form-group">
-            <label htmlFor="email">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </label>
-            <input
-              type="email"
-              id="email"
-              ref={emailRef}
-              className="form-input"
-              placeholder="Enter your email"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="password">
-              <FontAwesomeIcon icon={faLock} />
-            </label>
-            <input
-              type="password"
-              id="password"
-              ref={passwordRef}
-              className="form-input"
-              placeholder="Enter your password"
-            />
-          </div>
+          <InputField
+            icon={faEnvelope}
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            ref={emailRef}
+          />
+          <InputField
+            icon={faLock}
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            ref={passwordRef}
+          />
           <button type="submit" className="form-button">
             Login
           </button>
